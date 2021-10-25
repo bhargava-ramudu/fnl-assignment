@@ -79,12 +79,10 @@ const processWeatherData = ({ req, res, weatherData, insert, table }) => {
       return sendResponse(res, 500, false, null, null, msg);
     }
   } catch (e) {
-    res.status(500).json({ erros: e });
+    
+    return sendResponse(res, 500, false, e, null, msg);
   }
-  // } else {
-  //   let msg = `Sorry!! Something went wrong!!`;
-  //   return sendResponse(res, 500, false, null, null, msg);
-  // }
+  
 };
 
 const createOrModifyData = ({
