@@ -96,7 +96,7 @@ npm run start
 
 - I added only two integration tests due to the very tight schedule.
 
-## But I have got more time
+## But If I have got more time
 
 - I would have created User authentication functionality and also verify before user adding cities
 
